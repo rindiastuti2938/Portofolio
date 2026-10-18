@@ -1,0 +1,155 @@
+/* Skills & Tools */
+.skills-section {
+  padding: 80px 8%;
+}
+
+.skills-section .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 28px 22px;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  text-align: center;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.skill-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  line-height: 1.6;
+  color: #777;
+}
+
+.tools-area {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.tools-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.tools-list span {
+  padding: 10px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-section {
+    padding: 55px 6%;
+  }
+}
+/* Contact Me */
+.contact-section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.contact-content h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.contact-description {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-links a span {
+  font-weight: bold;
+}
+
+.contact-note {
+  margin-top: 35px;
+  color: #888;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 60px 6%;
+  }
+
+  .contact-content h2 {
+    font-size: 30px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-links a {
+    min-width: 150px;
+  }
+}
